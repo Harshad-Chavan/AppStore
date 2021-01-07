@@ -8,5 +8,6 @@ urlpatterns = [
     # path('', TemplateView.as_view(template_name="home.html")),
     path('', views.Applist,name="Applist"),
     path('quiz/', include('quiz.urls')),
+    path('encrypt_decrypt/', include('encryptdecrypt.urls')),
     
 ]
