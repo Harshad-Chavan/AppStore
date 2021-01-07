@@ -5,6 +5,7 @@ class Apps(models.Model):
     app_name = models.CharField(max_length=30)
     description = models.CharField(max_length=500)
     last_updated = models.DateField()
+    image_name = models.CharField(max_length=30,blank=True)
     # image = models.ImageField(upload_to='images/')
     
     def __str__(self):

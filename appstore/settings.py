@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
     #added apps
     'home',
+    'quiz',
 ]
 
 
