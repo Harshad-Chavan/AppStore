@@ -122,7 +122,7 @@ AUTHENTICATION_BACKENDS = (
 )
 ACCOUNT_LOGOUT_ON_GET = True 
 
-SITE_ID = 2
+SITE_ID = 3
 LOGIN_REDIRECT_URL = '/home'
 
 
@@ -158,3 +158,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR
