@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+
+    #added apps
+    'home',
 ]
 
 
@@ -119,7 +122,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 2
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/home'
 
 
 SOCIALACCOUNT_PROVIDERS = {
