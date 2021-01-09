@@ -10,6 +10,7 @@ class Action(models.Model):
 class FileDetails(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE) 
     file_name  = models.CharField(blank=True,max_length=50)
+    browsed_file = models.FileField(upload_to="files/")
     selected_action = models.ForeignKey(Action, on_delete=models.CASCADE)
     key  = models.CharField(blank=True,max_length=50)   
     def __str__(self):

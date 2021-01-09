@@ -11,8 +11,8 @@ def encdecHome(request):
             Encryptor_obj = Encryptor()
             
             selected_action = filled_form.cleaned_data['selected_action']
-            file_name = filled_form.cleaned_data['file_name']
-            
+        
+            file_name = 'hello'
             if selected_action.action == "Encrypt":
                 key = Encryptor_obj.generate_Key_file()
                 obj = FileDetails(user = request.user,file_name = file_name,key = key,selected_action = selected_action)

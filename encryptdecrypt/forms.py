@@ -8,5 +8,5 @@ from .models import FileDetails
 class EncryptionForm(forms.ModelForm):
     class Meta:
         model = FileDetails
-        fields = ["file_name","selected_action",]
+        fields = ["browsed_file","selected_action",]
         
