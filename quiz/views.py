@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import LeaderBoard
 
 # Create your views here.
 def quizHome(request):
-    return render(request,'quiz_home.html',{})
+    leaderboard = LeaderBoard.objects.all().order_by('-best_score')
+    return render(request,'quiz_home.html',{'leaderboard':leaderboard})
