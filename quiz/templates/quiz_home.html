@@ -6,6 +6,7 @@
     </row>
     <div class = 'row'>
         <div class = 'col-8'>
+        <p>questions here<p>
         </div>
         <div class = 'col-4'>
         <div class="p-1 p-md-3 mb-1 text-white text-center rounded bg-dark">
@@ -14,23 +15,23 @@
             </div>
         </div>
         <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">User</th>
-      <th scope="col">Score</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for record in leaderboard %}
-  <tr>
-      <th scope="row">{{ forloop.counter }}</th> 
-      <td>{{ record.user.username }}</td>
-      <td>{{ record.best_score }}</td>
-    </tr>
-  {% endfor %}
-</tbody>
-</table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">User</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for record in leaderboard %}
+          <tr>
+              <th scope="row">{{ forloop.counter }}</th> 
+              <td>{{ record.user.username }}</td>
+              <td>{{ record.best_score }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+        </table>
         </div>
     </div>
 
