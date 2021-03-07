@@ -9,5 +9,6 @@ urlpatterns = [
     path('', views.Applist,name="Applist"),
     path('quiz/', include('quiz.urls')),
     path('encrypt_decrypt/', include('encryptdecrypt.urls')),
+    path('url_shortner/', include('urlshortner.urls')),
     
 ]
