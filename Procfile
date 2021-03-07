@@ -1,1 +1,1 @@
-web gunicorn appstore.wsgi:application --log-file logs.txt -pip freeze requirements.txt
+web gunicorn appstore.wsgi:application --log-file -
