@@ -129,7 +129,7 @@ AUTHENTICATION_BACKENDS = (
 )
 ACCOUNT_LOGOUT_ON_GET = True 
 
-SITE_ID = 1
+SITE_ID = 5
 LOGIN_REDIRECT_URL = '/home'
 
 # Site.objects.create(name='appstoreharshad.herokuapp.com', domain='appstoreharshad.herokuapp.com')
