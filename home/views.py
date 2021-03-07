@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from .models import Apps
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
+@login_required
 def Applist(request):
     apps = Apps.objects.all()
     
